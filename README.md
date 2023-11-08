@@ -18,7 +18,9 @@ This app is built on seven frameworks that are shown below.
 
 ### Live Demonstration
 
-Fudo is live here [][]
+<<<<<<< HEAD
+Fudo is live here [Project](https://fudo-sepia.vercel.app/)
+
 Here are the screenshots of the Fudo Website
 
 **Home Page**
@@ -46,13 +48,13 @@ Here are the screenshots of the Fudo Website
 
 ## Getting Started
 
-To get started you can simply clone this `ecommerce-demo` repository and install the dependencies.
+To get started you can simply clone this `fudo` repository and install the dependencies.
 
-Clone the `ecommerce-demo` repository using git:
+Clone the `fudo` repository using git:
 
 ```bash
-git clone https://github.com/ratracegrad/ecommerce-demo
-cd ecommerce-demo
+git clone https://github.com/faiyaj7/fudo
+cd fudo
 ```
 
 Install dependencies with this command:
