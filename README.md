@@ -18,7 +18,6 @@ This app is built on seven frameworks that are shown below.
 
 ### Live Demonstration
 
-<<<<<<< HEAD
 Fudo is live here [Project](https://fudo-sepia.vercel.app/)
 
 Here are the screenshots of the Fudo Website
