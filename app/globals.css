@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins&display=swap");
+html,
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--themeBlack);
+  /* background: var(--background-color); */
+  overflow-x: hidden;
+}
+
+:root {
+  --themeRed: #f54748;
+  --themeBlack: #2e2e2e;
+  --pink: #fdecec;
+  --gray: #828282;
+  --shadow: -4px 12px 20px -2px rgba(0, 0, 0, 0.19);
+  --background-color: linear-gradient(
+    180deg,
+    rgba(255, 237, 237, 0.85) 0%,
+    rgba(255, 255, 255, 0) 30rem
+  );
+  --cartBack: rgba(255, 255, 255, 0.38);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: pink;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--themeRed);
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 300ms ease;
+}
+
+.product-image {
+  width: 100%;
+  /* height: auto; */
+  max-width: 300px;
+  max-height: 150px;
+}
+
+.darkModeFont {
+  @apply dark:text-white font-para;
+}
+.spinnerInner {
+  animation: spin 2s linear infinite;
+  @apply absolute top-[0.65rem] -right-5 w-[110px] h-[110px] rounded-full border border-transparent border-t border-t-red-600 border-b border-b-red-600;
+}
+
+.spinnerOuter {
+  animation: spinOpposite 2s linear infinite;
+  @apply absolute w-[130px] h-[130px] rounded-full border border-transparent border-t-2 border-t-red-600 border-b-2 border-b-red-600;
+}
+.success-wrapper,
+.cancel-wrapper {
+  min-height: 60vh;
+}
+.success,
+.cancel {
+  width: 1000px;
+  margin: auto;
+  margin-top: 160px;
+  background-color: #dcdcdc;
+  padding: 50px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.success .icon {
+  color: green;
+  font-size: 40px;
+}
+.success h2 {
+  text-transform: capitalize;
+  margin-top: 15px 0px;
+  font-weight: 900;
+  font-size: 40px;
+  color: #324d67;
+}
+.success .email-msg {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.cancel p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.success .description {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px;
+  margin-top: 30px;
+}
+.success .description .email {
+  margin-left: 5px;
+  color: #f02d34;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinOpposite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.btn {
+  @apply border-2 border-red-500 rounded-xl p-2 font-semibold text-sm hover:bg-red-500 duration-300;
+}
+
+.active {
+  @apply bg-red-600;
+}
+
+.crossWhenOpened {
+  @apply fixed top-10 right-5 z-30;
+}
