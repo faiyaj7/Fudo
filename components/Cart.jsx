@@ -71,7 +71,7 @@ const Page = () => {
                 </thead>
                 <tbody>
                   {cart.map((item) => (
-                    <tr key={item._id} className="darkModeFont">
+                    <tr key={item._id + item.size} className="darkModeFont">
                       <td>
                         <div className="w-[80px] h-[80px]">
                           <Image

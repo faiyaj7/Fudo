@@ -1,6 +1,6 @@
 ![Pizza Delivery Logo](/public/Logo.png)
 
-# Fudu
+# Fudo
 
 This is a website that demonstrates a pizza delivery website using Next Js . The website loads the product information from the sanity database . Users can select those products and can choose the pizza size and make an order. Moreover ,the order are taken both on Delivery and by Stripe Online Payment system. To work around the state management ,Zustand is used for its lightweight ,less Boiler plate and easy integrations. Furthermore, Framer Motion is used to bring live to the website by animation. All in all ,this website is a responsive website for small to large devices , can switch between light and black mode and in the whole project Tailwind is used for the website styling.
 
@@ -18,8 +18,8 @@ This app is built on seven frameworks that are shown below.
 
 ### Live Demonstration
 
-Fudu is live here [][]
-Here are the screenshots of the Fudu Website
+Fudo is live here [][]
+Here are the screenshots of the Fudo Website
 
 **Home Page**
 ![Home Page](/public/Home.png)
